@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Report a Crime</title>
+</head>
+<body>
+  <div class="watermark"></div> <!-- Watermark image -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GUSAU POLICE HEADQUARTER</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="crime2.html">Report a Crime</a></li>
+         <li><a href="inde.html">Zamfara State security Report</a></li>
+        <li><a href="crime3.html">Crime Dashboard</a></li>
+        <li><a href="crime faqs.html">FAQs</a></li>
+        <li><a href="crime4.html">About Us</a></li>
+        <li><a href="crime6.html">Terms and Conditions</a></li>
+        <li><a href="Privay.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Report a Crime</h1>
+    <form id="crimeForm" enctype="multipart/form-data">
+      <!-- Form fields for reporting a crime -->
+      <label for="reporterName">Your Name:</label>
+      <input type="text" id="reporterName" name="reporterName" required>
+      
+      <label for="crimeCategory">Category:</label>
+      <select id="crimeCategory" name="crimeCategory" required>
+        <option value="theft">Theft</option>
+        <option value="assault">Assault</option>
+        <option value="vandalism">Vandalism</option>
+        <option value="kidnapping">Kidnapping</option>
+        <option value="banditry">Banditry</option>
+        <option value="terrorism">Terrorism</option>
+        <option value="robbery">Robbery</option>
+        <option value="murder">Murder</option>
+        <option value="human trafficking">Human Trafficking</option>
+        <option value="drug trafficking">Drug Trafficking</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <label for="crimeDescription">Crime Description:</label>
+      <textarea id="crimeDescription" name="crimeDescription" required></textarea>
+      
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <label for="date">Date of Crime:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Time of Crime:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <label for="crimeImage">Upload Image (optional):</label>
+      <input type="file" id="crimeImage" name="image" accept="image/*">
+      
+      <label for="crimeVideo">Upload Video (optional):</label>
+      <input type="file" id="crimeVideo" name="video" accept="video/*">
+      
+      <label for="crimeAudio">Upload Audio (optional):</label>
+      <input type="file" id="crimeAudio" name="audio" accept="audio/*">
+
+      <div style="display: flex; justify-content: space-between;">
+        <button type="submit" id="submitReportButton">Submit Report</button>
+        <button type="button" id="viewReportButton">View Report</button>
+      </div>
+    </form>
+
+    <p id="statusMessage"></p>
+
+    <footer>
+      <p>&copy; 2024 Crime Reporting System</p>
+    </footer>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
