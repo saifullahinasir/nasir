@@ -42,9 +42,8 @@
     <footer>
         <p>&copy; 2024 Crime Reporting System</p>
     </footer>
-    <script src="Crime1.js"></script>
 </body>
 </html>
-  <script src="scripts.js"></script>
+  <script src="App.js"></script>
 </body>
 </html>
